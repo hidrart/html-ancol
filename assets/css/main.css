@@ -5,10 +5,11 @@
     --ancol-dark: #5f5f5f;
     --ancol-shadow: #f9f9f9;
     --ancol-white: #ffffff;
-    --ancol-blue: #76e5ff;
-    --ancol-yellow: #f3c414;
-    --ancol-yellow-hover: rgb(224, 180, 17);
-    --ancol-red: #ff6795;
+    --ancol-blue: hsl(191, 100%, 73%);
+    --ancol-blue-hover: hsl(191, 60%, 60%);
+    --ancol-yellow: rgb(243, 196, 20);
+    --ancol-yellow-hover: hsl(47, 86%, 47%);
+    --ancol-red: hsl(342, 100%, 70%);
     --ancol-red-hover: rgb(214, 88, 126);
 }
 
@@ -191,4 +192,76 @@ p {
     .navbar-collapse {
         padding-top: 2em;
     }
+}
+
+.person-container {
+    padding: 1em;
+}
+
+.person-item {
+    padding: 1em;
+    border-radius: 2em;
+    color: var(--ancol-white);
+    box-shadow: rgba(0, 0, 0, 0.089) 0px 20px 25px -5px, rgba(0, 0, 0, 0.096) 0px 10px 10px -5px;
+}
+
+.person-image {
+    width: 100%;
+}
+
+.person-detail {
+    padding: 2em 0;
+    color: var(--ancol-black);
+}
+
+.person-detail h2 {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.person-detail h3 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.person-detail p {
+    font-weight: 700;
+    color: var(--ancol-black);
+}
+
+.person-detail button {
+    font-size: .9em;
+    font-weight: 700;
+    color: var(--ancol-white);
+    margin-bottom: 1em;
+    box-shadow: none;
+}
+
+.person-detail button:hover,
+.person-detail button:active,
+.person-detail button:focus {
+    color: var(--ancol-white);
+    margin-bottom: 1em;
+    box-shadow: none !important;
+}
+
+.person-detail #phone {
+    background-color: var(--ancol-yellow);
+}
+
+.person-detail #phone:hover,
+.person-detail #phone:active,
+.person-detail #phone:focus {
+    background-color: var(--ancol-yellow-hover);
+}
+
+.person-detail #email {
+    background-color: var(--ancol-red);
+}
+
+.person-detail #email:hover,
+.person-detail #email:active,
+.person-detail #email:focus {
+    background-color: var(--ancol-red-hover);
 }
